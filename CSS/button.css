@@ -1,0 +1,58 @@
+.button {
+    outline: 0;
+    cursor: pointer;
+}
+
+/* STYLE */
+.btBorder {
+    border: 3px solid;
+    background: none;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 99
+}
+
+.btBorder::before {
+    content: '';
+    width: 0%;
+    height: calc(100% + 6px);
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.btBorder.txtWhite:hover {
+    color:var(--black)
+}
+
+.btBorder.txtWhite:hover::before{
+    width: calc(100% + 6px);
+    background-color: var(--white);
+}
+
+.btBorder.txtBlue:hover {
+    color:var(--white)
+}
+
+.btBorder.txtBlue:hover::before{
+    width: calc(100% + 6px);
+    background-color: var(--blue);
+}
+
+/* COLOR */
+.btBorder.btWhite {
+    border-color: var(--white);
+}
+
+.btBorder.btBlue {
+    border-color: var(--blue);
+}
+
+/* SIZE */
+.btSmall {
+    padding: 15px 46px;
+    font-size: 20px;
+}
