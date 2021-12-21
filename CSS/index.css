@@ -259,6 +259,16 @@
     margin-bottom: 15px;
 }
 
+@media only screen and (max-width: 1400px) {
+    .container#contributors > img {
+        width: 450px;
+    }
+
+    .container#contributors > div > article {
+        height: 250px;
+    }
+}
+
 @media only screen and (max-width: 750px) {
     .container#contributors > img {
         width: 350px;
