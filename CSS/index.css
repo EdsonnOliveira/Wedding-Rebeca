@@ -144,7 +144,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url('../IMG/bg2.png');
+    background: url('../IMG/bg2.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -218,7 +218,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url('../IMG/bg3.jpg');
+    background: url('../IMG/bg3.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -335,14 +335,14 @@
     grid-area: 1 / 1 / 4 / 4;
     width: 350px;
     height: 650px;
-    background: url('../Photos/p1.jpg');
+    background: url('../Photos/p1.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .container#galery > #first > article:nth-child(2) {
     grid-area: 1 / 4 / 3 / 7;
-    background: url('../Photos/p2.jpg');
+    background: url('../Photos/p2.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -350,42 +350,42 @@
 
 .container#galery > #first > article:nth-child(3) {
     grid-area: 3 / 4 / 4 / 6;
-    background: url('../Photos/p3.jpg');
+    background: url('../Photos/p3.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .container#galery > #first > article:nth-child(4) {
     grid-area: 1 / 7 / 3 / 9;
-    background: url('../Photos/p4.jpg');
+    background: url('../Photos/p4.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .container#galery > #first > article:nth-child(5) {
     grid-area: 3 / 6 / 6 / 9;
-    background: url('../Photos/p5.jpg');
+    background: url('../Photos/p5.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .container#galery > #first > article:nth-child(6) {
     grid-area: 4 / 4 / 6 / 6;
-    background: url('../Photos/p6.jpg');
+    background: url('../Photos/p6.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .container#galery > #first > article:nth-child(7) {
     grid-area: 4 / 1 / 6 / 4;
-    background: url('../Photos/p7.jpg');
+    background: url('../Photos/p7.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .container#galery > #first > article:nth-child(8) {
     grid-area: 6 / 1 / 8 / 9;
-    background: url('../Photos/p8.jpg');
+    background: url('../Photos/p8.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
