@@ -26,6 +26,10 @@ a {
     font-style: italic;
 }
 
+.txtUnderline {
+    text-decoration: underline;
+}
+
 /* WEIGHT */
 .txt400 {
     font-weight: 400;
