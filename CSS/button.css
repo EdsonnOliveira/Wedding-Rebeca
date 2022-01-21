@@ -1,3 +1,7 @@
+*[onclick] {
+    cursor: pointer;
+}
+
 .button {
     outline: 0;
     cursor: pointer;

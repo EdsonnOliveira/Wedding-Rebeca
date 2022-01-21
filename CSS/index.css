@@ -260,7 +260,7 @@
     margin-bottom: 15px;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1450px) {
     .container#contributors > img {
         width: 450px;
     }
@@ -320,6 +320,10 @@
     .container#godParents > div > article {
         margin-right: 0;
     }
+}
+
+.container#galery {
+    margin-top: 30px;
 }
 
 .container#galery > div {
@@ -467,4 +471,14 @@
     .container#part > h1 > br {
         display: none;
     }
+}
+
+.backdrop > .modal > img {
+    width: 326px;
+    height: 326px;
+    margin-top: 10px;
+}
+
+.backdrop > .modal > h1 {
+    font-size: 42px;
 }
