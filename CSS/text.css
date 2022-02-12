@@ -17,6 +17,18 @@ a {
     color: var(--white)
 }
 
+.txtBlack {
+    color: var(--black)
+}
+
+.txtBrown {
+    color: var(--brown);
+}
+
+.txtBlue {
+    color: var(--blue)
+}
+
 /* TRANSFORM */
 .txtUpper {
     text-transform: uppercase;
@@ -50,19 +62,6 @@ a {
 /* ALIGN */
 .txtCenter {
     text-align: center;
-}
-
-/* COLOR */
-.txtBlack {
-    color: var(--black)
-}
-
-.txtBrown {
-    color: var(--brown);
-}
-
-.txtBlue {
-    color: var(--blue)
 }
 
 /* TITLE */

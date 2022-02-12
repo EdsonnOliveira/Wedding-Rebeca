@@ -84,6 +84,33 @@ main {
     }
 }
 
+.backdrop > .modal > img {
+    width: 326px;
+    height: 326px;
+    margin-top: 10px;
+}
+
+.backdrop > .modal > h1 {
+    font-size: 42px;
+}
+
+@media only screen and (max-width: 750px) {
+    .backdrop > .modal > img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 5px;
+    }
+
+    .backdrop > .modal > h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .backdrop > .modal > h1 {
+        font-size: 30px;
+    }
+}
+
 :root {
     --black: #292929;
     --brown: #AF877F;

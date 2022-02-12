@@ -1,0 +1,33 @@
+/* INPUT */
+input {
+    outline: 0;
+    border: 0;
+}
+
+.input {
+    background-color: #f9f9f9;
+}
+
+.input::placeholder {
+    color: var(--brown)
+}
+
+.ip100 {
+    width: 100%;
+    padding: 13px;
+    padding-left: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* TEXT */
+form > label > h5 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
