@@ -1,7 +1,11 @@
+<?php
+    if (isset($_GET['incorrect']))
+        echo "<script>alert('Senha incorreta!')</script>";
+?>
 <!DOCTYPE html>
     <html lang="pt-br">
     <head>
-        <title>Lucas & Rebeca | Presenças Confirmadas</title>
+        <title>Lucas & Rebeca | Confirmar Presença</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +19,6 @@
         <link rel='stylesheet' type='text/css' href='CSS/text.css'/>
         <link rel='stylesheet' type='text/css' href='CSS/button.css'/>
         <link rel='stylesheet' type='text/css' href='CSS/form.css'/>
-        <link rel='stylesheet' type='text/css' href='CSS/table.css'/>
         <link rel='stylesheet' type='text/css' href='CSS/footer.css'/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
@@ -25,12 +28,12 @@
                 <img src="IMG/Custom/Menu.webp" alt="Menu" class='button' id='openMenu'>
                 <nav>
                     <ul>
-                        <li><a href="index.html" class='txtWhite'>Início</a></li>
-                        <li><a href="index.html#he" class='txtWhite'>Sobre Ele</a></li>
-                        <li><a href="index.html#she" class='txtWhite'>Sobre Ela</a></li>
-                        <a href="index.html"><img src="IMG/Logo.webp" alt="logo"></a>
-                        <li><a href="index.html#we" class='txtWhite'>Sobre Nós</a></li>
-                        <li><a href="index.html#galery" class='txtWhite'>Galeria</a></li>
+                        <li><a href="index.php" class='txtWhite'>Início</a></li>
+                        <li><a href="index.php#he" class='txtWhite'>Sobre Ele</a></li>
+                        <li><a href="index.php#she" class='txtWhite'>Sobre Ela</a></li>
+                        <a href="index.php"><img src="IMG/Logo.webp" alt="logo"></a>
+                        <li><a href="index.php#we" class='txtWhite'>Sobre Nós</a></li>
+                        <li><a href="index.php#galery" class='txtWhite'>Galeria</a></li>
                         <li><a class='txtWhite button btContribute'>Como ajudar</a></li>
                     </ul>
                 </nav>
@@ -38,11 +41,11 @@
                     <img src="IMG/Logo.webp" alt="logo">
                     <nav>
                         <ul>
-                            <li><a href="index.html" class='txtWhite'>Início</a></li>
-                            <li><a href="index.html#he" class='txtWhite'>Sobre Ele</a></li>
-                            <li><a href="index.html#she" class='txtWhite'>Sobre Ela</a></li>
-                            <li><a href="index.html#we" class='txtWhite'>Sobre Nós</a></li>
-                            <li><a href="index.html#galery" class='txtWhite'>Galeria</a></li>
+                            <li><a href="index.php" class='txtWhite'>Início</a></li>
+                            <li><a href="index.php#he" class='txtWhite'>Sobre Ele</a></li>
+                            <li><a href="index.php#she" class='txtWhite'>Sobre Ela</a></li>
+                            <li><a href="index.php#we" class='txtWhite'>Sobre Nós</a></li>
+                            <li><a href="index.php#galery" class='txtWhite'>Galeria</a></li>
                             <li><a class='txtWhite button btContribute'>Como ajudar</a></li>
                         </ul>
                     </nav>
@@ -52,31 +55,14 @@
         </section>
         <main>
             <section class="container">
-                <h1 class='txtTitle txtBlack txtCenter'>Presenças Confirmadas</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Nome</th>
-                            <th>Telefone</th>
-                            <th>Data e Hora</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Edson Pinheiro de Oliveira</td>
-                            <td>(61) 98203-0380</td>
-                            <td>19/02/2022 às 11:15</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Edson Pinheiro de Oliveira</td>
-                            <td>(61) 98203-0380</td>
-                            <td>19/02/2022 às 11:15</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h1 class='txtTitle txtBlack txtCenter'>Lista de Presença</h1>
+                <form method='post' action='subscribe.php'>
+                    <label for="password">
+                        <h5 class="txtBlack txt600">Senha</h5>
+                        <input type="text" name="password" id="password" class="input ip100 txtBrown" placeholder="Digite a senha" maxlength="10" required>
+                    </label>
+                    <input type="submit" name="submitPassword" class="button btBorder btBlue bt100" value="Prosseguir!">
+                </form>
             </section>
             <section class='backdrop'>
                 <div class='modal'>
@@ -86,10 +72,7 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <h1 class='txtCenter txtWhite txt400'>©CopyRight - Todos os direitos reservados</h1>
-            <h2 class='txtMuli txtCenter txtWhite txt400'>Criado por: Edson Pinheiro</h2>
-        </footer>
+        <?php include("Components/footer.php") ?>
         <script src='JS/header.js'></script>
         <script src='JS/contribute.js'></script>
         <script src="JS/mask.js"></script>

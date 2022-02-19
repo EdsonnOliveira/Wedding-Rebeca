@@ -1,7 +1,10 @@
+<?php
+    include('PHP/conn.php');
+?>
 <!DOCTYPE html>
     <html lang="pt-br">
     <head>
-        <title>Lucas & Rebeca | Confirmar Presença</title>
+        <title>Lucas & Rebeca | Presenças Confirmadas</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +18,7 @@
         <link rel='stylesheet' type='text/css' href='CSS/text.css'/>
         <link rel='stylesheet' type='text/css' href='CSS/button.css'/>
         <link rel='stylesheet' type='text/css' href='CSS/form.css'/>
+        <link rel='stylesheet' type='text/css' href='CSS/table.css'/>
         <link rel='stylesheet' type='text/css' href='CSS/footer.css'/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
@@ -24,12 +28,12 @@
                 <img src="IMG/Custom/Menu.webp" alt="Menu" class='button' id='openMenu'>
                 <nav>
                     <ul>
-                        <li><a href="index.html" class='txtWhite'>Início</a></li>
-                        <li><a href="index.html#he" class='txtWhite'>Sobre Ele</a></li>
-                        <li><a href="index.html#she" class='txtWhite'>Sobre Ela</a></li>
-                        <a href="index.html"><img src="IMG/Logo.webp" alt="logo"></a>
-                        <li><a href="index.html#we" class='txtWhite'>Sobre Nós</a></li>
-                        <li><a href="index.html#galery" class='txtWhite'>Galeria</a></li>
+                        <li><a href="index.php" class='txtWhite'>Início</a></li>
+                        <li><a href="index.php#he" class='txtWhite'>Sobre Ele</a></li>
+                        <li><a href="index.php#she" class='txtWhite'>Sobre Ela</a></li>
+                        <a href="index.php"><img src="IMG/Logo.webp" alt="logo"></a>
+                        <li><a href="index.php#we" class='txtWhite'>Sobre Nós</a></li>
+                        <li><a href="index.php#galery" class='txtWhite'>Galeria</a></li>
                         <li><a class='txtWhite button btContribute'>Como ajudar</a></li>
                     </ul>
                 </nav>
@@ -37,11 +41,11 @@
                     <img src="IMG/Logo.webp" alt="logo">
                     <nav>
                         <ul>
-                            <li><a href="index.html" class='txtWhite'>Início</a></li>
-                            <li><a href="index.html#he" class='txtWhite'>Sobre Ele</a></li>
-                            <li><a href="index.html#she" class='txtWhite'>Sobre Ela</a></li>
-                            <li><a href="index.html#we" class='txtWhite'>Sobre Nós</a></li>
-                            <li><a href="index.html#galery" class='txtWhite'>Galeria</a></li>
+                            <li><a href="index.php" class='txtWhite'>Início</a></li>
+                            <li><a href="index.php#he" class='txtWhite'>Sobre Ele</a></li>
+                            <li><a href="index.php#she" class='txtWhite'>Sobre Ela</a></li>
+                            <li><a href="index.php#we" class='txtWhite'>Sobre Nós</a></li>
+                            <li><a href="index.php#galery" class='txtWhite'>Galeria</a></li>
                             <li><a class='txtWhite button btContribute'>Como ajudar</a></li>
                         </ul>
                     </nav>
@@ -51,25 +55,35 @@
         </section>
         <main>
             <section class="container">
-                <h1 class='txtTitle txtBlack txtCenter'>Lista de Presença</h1>
-                <form>
-                    <label for="password">
-                        <h5 class="txtBlack txt600">Senha</h5>
-                        <input type="text" name="password" id="password" class="input ip100 txtBrown" placeholder="Digite a senha" maxlength="40">
-                    </label>
-                    <input type="submit" name="submit" class="button btBorder btBlue bt100" value="Prosseguir!">
-                </form>
-                <form>
-                    <label for="name">
-                        <h5 class="txtBlack txt600">Nome completo</h5>
-                        <input type="text" name="name" id="name" class="input ip100 txtBrown" placeholder="Digite seu nome aqui" maxlength="40">
-                    </label>
-                    <label for="phone">
-                        <h5 class="txtBlack txt600">Telefone</h5>
-                        <input type="text" name="phone" id="phone" class="input ip100 ipPhone txtBrown" placeholder="(00) 0000-0000">
-                    </label>
-                    <input type="submit" name="submit" class="button btBorder btBlue bt100" value="Confirmar Presença!">
-                </form>
+                <h1 class='txtTitle txtBlack txtCenter'>Presenças Confirmadas</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Data e Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                            $SQL = $conn->prepare('SELECT * FROM subscribe');
+                            $SQL->execute();
+                        
+                            $SQLSubscribe = $SQL->fetchAll();
+                            $i = 1;
+                            foreach ($SQLSubscribe as $value) {
+                                echo "<tr>";
+                                    echo "<td>" . $i . '</td>';
+                                    echo "<td>" . $value['Nome'] . '</td>';
+                                    echo "<td>" . $value['Telefone'] . '</td>';
+                                    echo "<td>" . $value['DataHora'] . '</td>';
+                                echo "</tr>";
+                                $i++;
+                            }
+                        ?>
+                    </tbody>
+                </table>
             </section>
             <section class='backdrop'>
                 <div class='modal'>
