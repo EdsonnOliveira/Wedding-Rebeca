@@ -267,7 +267,7 @@
                 </div>
             </section>
         </main>
-        <?php include("PHP/footer.php") ?>
+        <?php include("Components/footer.php") ?>
         <script src='JS/countDays.js'></script>
         <script src='JS/header.js'></script>
         <script src='JS/contribute.js'></script>
