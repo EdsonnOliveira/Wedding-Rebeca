@@ -1,0 +1,24 @@
+table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table > thead > tr > th {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+table > tbody > tr:nth-child(even) { background: #EEE; }
+
+table > tbody > tr:nth-child(odd) { background: #FFF; }
+
+table > tbody > tr > td {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+table > tbody > tr > td:first-child {
+    font-weight: 600;
+}

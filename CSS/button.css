@@ -29,7 +29,7 @@
 }
 
 .btBorder.txtWhite:hover {
-    color:var(--black)
+    color: var(--black)
 }
 
 .btBorder.txtWhite:hover::before{
