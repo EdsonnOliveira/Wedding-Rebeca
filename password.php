@@ -59,7 +59,7 @@
                 <form method='post' action='subscribe.php'>
                     <label for="password">
                         <h5 class="txtBlack txt600">Senha</h5>
-                        <input type="text" name="password" id="password" class="input ip100 txtBrown" placeholder="Digite a senha" maxlength="10" required>
+                        <input type="password" name="password" id="password" class="input ip100 txtBrown" placeholder="Digite a senha" maxlength="10" required>
                     </label>
                     <input type="submit" name="submitPassword" class="button btBorder btBlue bt100" value="Prosseguir!">
                 </form>
