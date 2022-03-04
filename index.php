@@ -76,7 +76,7 @@
                 <h1 class='txtTitle txtBlack txtCenter'>Sobre Ele</h1>
                 <div class='subContainer about'>
                     <article>
-                        <img src="Photos/noivo.webp" alt="" loading='lazy'>
+                        <img src="Photos/noivo.webp" alt="" loading='lazy' class='imgEngaged'>
                     </article>
                     <article class='auto'>
                         <h1 class='txtTitle'>Não aguenta mais esperar!</h1>
@@ -95,7 +95,7 @@
                         <img src="IMG/AssinatureRebeca.webp" alt="" loading='lazy'>
                     </article>
                     <article>
-                        <img src="Photos/noiva.webp" alt="" loading='lazy'>
+                        <img src="Photos/noiva.webp" alt="" loading='lazy' class='imgEngaged' style='object-position: 0 -20px;'>
                     </article>
                 </div>
             </section>

@@ -87,9 +87,11 @@
     flex: 2;
 }
 
-.subContainer.about > article > img {
+.subContainer.about > article > .imgEngaged {
     width: 350px;
+    height: 350px;
     border-radius: 100%;
+    object-fit: cover;
 }
 
 .subContainer.about > article > .txtTitle {
