@@ -89,6 +89,7 @@
 
 .subContainer.about > article > img {
     width: 350px;
+    border-radius: 100%;
 }
 
 .subContainer.about > article > .txtTitle {
