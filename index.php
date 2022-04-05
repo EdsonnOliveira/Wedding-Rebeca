@@ -95,7 +95,7 @@
                         <img src="IMG/AssinatureRebeca.webp" alt="" loading='lazy'>
                     </article>
                     <article>
-                        <img src="Photos/noiva.webp" alt="" loading='lazy' class='imgEngaged' style='object-position: 0 -20px;'>
+                        <img src="Photos/noiva.webp" alt="" loading='lazy' class='imgEngaged' style='object-position: -65px 0px;'>
                     </article>
                 </div>
             </section>
@@ -252,12 +252,21 @@
                     <article></article>
                     <article></article>
                 </div>
+                <div id='second'>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                </div>
             </section>
             <section class="container" id="part" name="part">
                 <img src="IMG/Part.webp" alt="" loading='lazy'>
-                <h1 class='txtMuli txtBlack txtCenter txt400'>Nos ajude com um valor ou comprando</br>
-                    nossos itens preferidos da nossa lista!</h1>
-                <a class='button btSmall btBorder btBlue btContribute txtBlue txtItalic'>Nos ajude!</a>
+                <h1 class='txtMuli txtBlack txtCenter txt400'>Nos ajude com um valor!</h1>
+                <a class='button btSmall btBorder btBlue btContribute txtBlue txtItalic'>Ajudar casal!</a>
             </section>
             <section class='backdrop'>
                 <div class='modal'>
