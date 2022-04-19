@@ -52,19 +52,19 @@
                 <h5 class='txtMuli txtUpper txtWhite txt400 txtCenter'>Nosso sonho acontecerá dia <b class='txtMuli txt700'>16 de Abril</b></h5>
                 <div>
                     <span>
-                        <h1 class='txtWhite txtItalic txt400' id='days'></h1>
+                        <h1 class='txtWhite txtItalic txt400' id='days'>0</h1>
                         <h3 class='txtWhite txtMuli txtUpper txt400'>Dias</h3>
                     </span>
                     <span>
-                        <h1 class='txtWhite txtItalic txt400' id='hours'></h1>
+                        <h1 class='txtWhite txtItalic txt400' id='hours'>0</h1>
                         <h3 class='txtWhite txtMuli txtUpper txt400'>Horas</h3>
                     </span>
                     <span>
-                        <h1 class='txtWhite txtItalic txt400' id='minutes'></h1>
+                        <h1 class='txtWhite txtItalic txt400' id='minutes'>0</h1>
                         <h3 class='txtWhite txtMuli txtUpper txt400'>Minutos</h3>
                     </span>
                     <span>
-                        <h1 class='txtWhite txtItalic txt400' id='seconds'></h1>
+                        <h1 class='txtWhite txtItalic txt400' id='seconds'>0</h1>
                         <h3 class='txtWhite txtMuli txtUpper txt400'>Segundos</h3>
                     </span>
                 </div>
@@ -277,7 +277,7 @@
             </section>
         </main>
         <?php include("Components/footer.php") ?>
-        <script src='JS/countDays.js'></script>
+        <!-- <script src='JS/countDays.js'></script> -->
         <script src='JS/header.js'></script>
         <script src='JS/contribute.js'></script>
         <script src='JS/anchor.js'></script>
